@@ -25,7 +25,7 @@ Running through VS Code Live Server
 
 ## Site Features
 
-This site is primarily visual and does not offer mean features,
+This site is primarily visual and does not offer many features,
 however, clicking on any of the photos under "favorite photos" will
 open the photo in fullscreen and clicking on the "Dove Icon" link 
 in the footer will open source of how the dove icon was constructed.
