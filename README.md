@@ -1,8 +1,6 @@
-# web-dev-starter
+# Birdwatching Welcome Page
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+This lab displays the homepage for a birdwatching website. 
 
 ## Getting Started
 
@@ -25,17 +23,11 @@ Running through VS Code Live Server
 7. (Optional) Paste that link into a web browser of your choice
 8. Close the Live Preview server when finished by opening the command palett and selecting "Live Preview: Stop Server"
 
-## Development
+## Site Features
 
-It is recommended to use the VSCode Live Server extension to run the project
-locally. This will allow you to see changes in real-time as you make them. There
-is no need to run a build process or refresh the page manually. Additionally,
-you do not need to setup a local server to run the project.
+This site is primarily visual and does not offer mean features,
+however, clicking on any of the photos under "favorite photos" will
+open the photo in fullscreen and clicking on the "Dove Icon" link 
+in the footer will open source of how the dove icon was constructed.
 
-## Testing
 
-To run the tests for the project, run the following command:
-
-```bash
-npm test
-```

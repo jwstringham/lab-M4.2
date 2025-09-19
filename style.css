@@ -1,0 +1,127 @@
+:root{
+  --green-1:#76e676;
+  --green-2:#61d861;
+  --panel:#7eef7e;
+  --separator:#a9d4a9;
+  --text:#19221f;
+  --footer:#d7d9db;
+  --shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family: "Roboto Condensed", system-ui, -apple-system, Arial, sans-serif;
+  color:var(--text);
+  background: var(--green-1);
+  line-height:1.5;
+}
+
+.row{
+  width:min(1100px, 94%);
+  margin-inline:auto;
+}
+
+.site-header{
+  background: var(--green-1);
+  box-shadow: var(--shadow);
+}
+.site-header .brand{
+  width:min(1100px, 94%);
+  margin-inline:auto;
+
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1.25rem 0 .5rem;
+}
+.site-header .brand .logo{
+  width:56px; height:auto; display:block;
+}
+.site-title{
+  font-family: "Cinzel Decorative", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing:.03em;
+  margin:0;
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.site-nav{
+  background: var(--green-2);
+  border-top: 4px solid rgba(0,0,0,.08);
+  border-bottom: 6px solid #9ac39a;
+}
+.site-nav > ul{
+  width:min(1100px, 94%);
+  margin-inline:auto;
+
+  list-style:none;
+  margin-top:0; margin-bottom:0;
+  padding:.85rem 0;
+  display:flex;
+  gap: clamp(1rem, 5vw, 4rem);
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.site-nav a{
+  text-decoration:none;
+  color:#0d2510;
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:.04em;
+}
+.site-nav a[aria-current="page"]{
+  border-bottom:3px solid #0d2510;
+  padding-bottom:.2rem;
+}
+
+.content{
+  width:min(1100px, 94%);
+  margin-inline:auto;
+
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap:2rem;
+  background: linear-gradient(var(--panel), var(--panel));
+  padding:2rem 1rem;
+  border-bottom: 6px solid #9ac39a;
+}
+.welcome, .sidebar{
+  background: rgba(255,255,255,.08);
+  padding:1.25rem 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+.welcome h2, .sidebar h2{
+  font-family: "Cinzel Decorative", Georgia, serif;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  margin:0 0 .75rem;
+}
+
+.thumbs{
+  list-style:none;
+  margin:0; padding:0;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:.75rem;
+}
+.thumbs img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.site-footer{
+  background: var(--footer);
+  padding:1.25rem 0 2rem;
+  color:#2a2a2a;
+  border-top: 6px solid #9ac39a;
+}
+.site-footer p{
+  width:min(1100px, 94%);
+  margin-inline:auto;
+
+  margin-top:.3rem; margin-bottom:.3rem;
+}
+
